@@ -11,14 +11,14 @@ class List extends Component {
   }
 
   async componentDidMount() {
-    const movies = await fetch('../../assets/data.json');
+    const movies = await fetch('assets/data.json');
     const moviesJSON = await movies.json();
 
     if (moviesJSON) {
       this.setState({
         data: moviesJSON,
         loading: false,
-      })
+      });
     }
   }
 
