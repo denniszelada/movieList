@@ -30,15 +30,15 @@ class List extends Component {
     }
 
     return (
-      <div class='row'>
+      <div className='row'>
         {data.map(movie =>
-          <div class='col-sm-2'>
-            <Card key={ movie.id } movie ={ movie } />
+          <div className='col-sm-2' key={ movie.id }>
+            <Card movie ={ movie } />
           </div>
         )}
       </div>
     );
   }
-};
+}
 
 export default List;
